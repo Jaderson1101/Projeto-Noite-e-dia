@@ -37,7 +37,7 @@ nav a{
     text-decoration: none;
     text-transform: uppercase;
     color: #727272;
-    padding: 15px;    
+    padding: 15px;
 }
 nav .active a,
 nav a:hover{
@@ -255,4 +255,120 @@ article .news_resume h3{
     color: #5c5c5c;
     font-size: 13px;
     margin-bottom: 30px;
+}
+footer{
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+.flexcolumn{
+    flex-direction: column;
+}
+.footer_area{
+    display: flex;
+}
+.footer_area_item{
+    flex: 1;
+    color: white;
+}
+.footer_copy{
+    border-top: 1px solid #2c2c2c;
+    height: 40px;
+    line-height: 40px;
+    color: #727272;
+    font-size: 12px;
+    margin-top: 30px;
+}
+.footer_area_item h1, h3{
+    color: #727272;
+}
+.footer_area_item h1{
+    font-size: 13px;
+    
+}
+.footer_area h3{
+    margin-top: 20px;
+    font-size: 13px;
+}
+.footer_area_item h2 {
+    color: #517dec;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+.menu_mobile{
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+.mm_line{
+    height: 3px;
+    background-color: #1e539f;
+}
+@media (max-width:720px){
+    #banner{
+        height: auto;
+    }
+    .banner_headline{
+        padding: 20px;
+        height: auto;
+    }
+    .banner_headline h1{
+        font-size: 55px;
+    }
+    .banner_headline h2{
+        font-size: 17px;
+    }
+    .banner_options{
+        flex-direction: column;
+        height: auto;
+    }
+    .conteiner{
+        flex-direction: column;
+    }
+    .widget_title{
+        padding: 20px;
+    }
+    .widget_body_text{
+        padding: 20px;
+    }
+    .flex{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .footer_area{
+        flex-direction: column;
+        
+    }
+    .footer_area_item h1, h2, h3{
+        padding-left: 20px;
+    }
+    .footer_copy{
+        padding-left: 20px;
+    }
+    header .conteiner{
+        flex-direction: row;
+    }
+    nav ul{
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #FFFFFF;
+    }
+    nav ul li{
+        margin: 15px;
+    }
+
+    header{
+        height: auto;
+    }
+    .menu_mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }

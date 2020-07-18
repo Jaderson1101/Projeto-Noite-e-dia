@@ -5,9 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Noite e dia modas</title>
+
+    <script type="text/javascript">
+        window.onload = function(){
+            document.querySelector(".menu_mobile").addEventListener("click", function(){
+                if(document.querySelector(".menu nav ul").style.display=='flex'){
+                    document.querySelector(".menu nav ul").style.display ='none';
+                } else{
+                    document.querySelector(".menu nav ul").style.display ='flex';
+                }
+            });
+        };
+    </script>
+
 </head>
 <body>
-    <header>
+    <header id="inicio">
         <div class="conteiner">
             <div class="logo">
                 <a href="">
@@ -16,12 +29,17 @@
             </div>
             <div class="menu">
                 <nav>
+                    <div class="menu_mobile">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
                     <ul>
-                        <li class="active"><a href="">Inicio</a></li>
+                        <li classe="active"><a href="#inicio">Inicio</a></li>
                         <li><a href="#produtos">Podutos</a></li>
                         <li><a href="#equipe">Equipe</a></li>
                         <li><a href="#contato">Contato</a></li>
-                        <li><a href="">Informações</a></li>
+                        <li><a href="#informacoes">Informações</a></li>
                     </ul>
                 </nav>
             </div>
@@ -227,7 +245,7 @@
                             <div class="widget_body_options_options">
                                 <div class="widget_body_options_options_text">
                                     <img src="assets/img/smartphone.png" class="imagem" alt="">
-                                    Por telefone : <a href="https://api.whatsapp.com/send?phone=555511991038970" style="color: #39aae1;" target="_blank"<strong>+55 11 99103-8970</strong></a> 
+                                    Por telefone : <a href="https://api.whatsapp.com/send?phone=555511991038970" style="color: #39aae1;" target="_blank"><strong>+55 11 99103-8970</strong></a> 
                                 </div>
                             </div>
                             <div class="widget_title_bar_line"></div>
@@ -251,5 +269,70 @@
             </aside>
         </div>
     </section>
+    <footer>
+        <div class="conteiner flexcolumn" id="informacoes">
+            <div class="footer_area">
+                <div class="footer_area_item">
+                    <div class="widget_title" id="equipe">
+                        <div class="widget_title_text" style="color: white;">Noite e dia modas</div>
+                        <div class="widget_title_text_bar"></div>
+                    </div>
+                    <h1>Noite e dias modas é uma empresa de revenda de moda intima</h1>
+                    <h3>Interessados em se tornar revededores, favor entrar em contato pelos meio exibidos na aba "Entre em contato"</h3>
+                </div>
+                <div class="footer_area_item">
+                    <div class="widget_title" id="equipe">
+                        <div class="widget_title_text" style="color: white;">Ultimos posts</div>
+                        <div class="widget_title_text_bar"></div>
+                    </div>
+                    <h1>
+                        → Pijama femino
+                    </h1>
+                    <h2>
+                        5 dias atrás
+                    </h2>
+                    <h1>
+                        → Sutian com bojo
+                    </h1>
+                    <h2>
+                        8 dias atrás
+                    </h2>
+                    <h1>
+                        → Kit calcinha e sutian
+                    </h1>
+                    <h2>
+                        13 dias atrás
+                    </h2>
+                </div>
+                <div class="footer_area_item">
+                    <div class="widget_title" id="equipe">
+                        <div class="widget_title_text" style="color: white;">Ultimos tweets</div>
+                        <div class="widget_title_text_bar"></div>
+                    </div>
+                    <h1>
+                        → Texto de exibição, esse texto poderá e será alterado de acordo com o desejo do cliente
+                    </h1>
+                    <h2>
+                        5 dias atrás
+                    </h2>
+                    <h1>
+                        → Texto de exibição, esse texto poderá e será alterado de acordo com o desejo do cliente
+                    </h1>
+                    <h2>
+                        8 dias atrás
+                    </h2>
+                    <h1>
+                        → Texto de exibição, esse texto poderá e será alterado de acordo com o desejo do cliente
+                    </h1>
+                    <h2>
+                        13 dias atrás
+                    </h2>
+                </div>
+            </div>
+            <div class="footer_copy">
+                ® Copyright - Todos os direitos reservados a "Noite e dia modas". Site criado para fins didáticos, sem interesse financeiro.
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
