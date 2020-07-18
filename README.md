@@ -1,2 +1,2 @@
-# https://Projeto-Noite-e-dia.github.io
+# http://Projeto-Noite-e-dia.github.io
 Projeto criado para fins educacionais
